@@ -9,9 +9,8 @@ module.exports = function() {
   app.use(bodyParser.json());
   app.use(express.static(path.join(appDir + '/public')));
   app.get('/', function(req, res) {
-    res.sendFile(appDir + '/public/index.html');
+    res.render(appDir + '/public/index.html');
   });
-
   // require('../app/routes/')(app);
   return app;
 };
