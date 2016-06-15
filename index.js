@@ -1,3 +1,4 @@
+require('dotenv').config();
 var app = require('./config/express')(),
     port = process.env.PORT || 3300;
 

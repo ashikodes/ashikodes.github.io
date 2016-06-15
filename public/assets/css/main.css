@@ -2389,6 +2389,13 @@
 			.button.special:hover {
 				background-color: #5ed0b1;
 			}
+			
+			input[type="submit"].special:focus,
+			input[type="reset"]:focus,
+			input[type="button"].special:focus,
+			.button.special:focus {
+				outline: none;
+			}
 
 			input[type="submit"].special:active,
 			input[type="reset"].special:active,
