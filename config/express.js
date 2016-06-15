@@ -14,7 +14,6 @@ module.exports = function() {
   });
   app.post('/sendMail', function(req, res) {
     var data = req.body;
-    console.log('data', data);
     transporter.sendMail({
       from: "ashikodi.com.ng ✔ <no-reply@ashikodi.com.ng>",
       to: process.env.OWNER_MAIL,
@@ -25,7 +24,7 @@ module.exports = function() {
         return err;
       }
       console.log(result);
-      res.status(200).redirect('/');
+      res.status(200).redirect('http://www.ashikodi.com.ng');
     });
   });
   return app;
